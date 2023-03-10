@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Bai 2</title> <!-- Tiêu đề web và hiển thị khi search gu gồ -->
+        <meta charset="utf-8"> <!-- Hỗ trợ tiếng Việt trong body -->
+        <link rel="stylesheet" href="css/reset.css"> <!-- Reset thông số theo từng trình duyệt, nếu ko sẽ bị lỗi mở trên Chrome khác FireFox -->
+        <link rel="stylesheet" href="css/style.css"> <!-- Link qua CSS hoặc style ngay trong HTML như dưới đây -->
+        <style>
+            h2 {
+                color: red;
+                font-size: 25px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        </style>
+        <!-- * CSS in HTML có 3 dạng:
+            Internal (style h2 như ở trên)
+            External (link qua CSS như ở trên hoặc link từ 1 nơi khác: internet, so on...)
+            Inline (Code tới đâu mô tả tới đó, ví dụ <h2 style="color: red">Test</h2>) 
+            * Tìm hiểu thêm ID và Class-->
+    </head>
+
+    <body> 
+        
+        <section class="class1"> <!-- Mỗi section là 1 trang hiển thị -->
+            <div class="class1__left"> <!-- div là khối bao quanh 1 nội dung nào đó, nên nhóm các nội dung lại với nhau -->
+                <h2>Your Best Value Proposition</h2> <!-- h1-h6 chữ nhỏ dần -->
+                <h2 title="Đó, thấy hay ko ^^">Di chuột vào đây</h2> <!-- Gọi là Attribute: Thuộc tính cho nội dung -->
+                <p>abcdefghijklmnopqrstuvwxyz</p> <!-- Thẻ p để viết nội dung -->
+                <button>Start Free Trial</button> <!-- Nút bấm -->
+                <a href="https://www.figma.com/file/I6UZSzLtLuTs83uTuJlekI/Wireframing-(Copy)?node-id=0%3A10&t=pqQODSDiqRVjpYdc-0">Đi tới Figma</a> <!-- Bấm vào link để mở 1 trang khác -->
+                <ul> <!-- Mỗi danh sách chỉ cần 1 thẻ ul (chấm) hoặc ol (số) và các thẻ con li, Gõ li*3 để x3 -->
+                    <li>Option 1</li>
+                    <li>Option 2</li>
+                    <li>Option 3</li>
+                </ul>
+                <input type="text"> <!-- Ô gõ chữ -->
+                <input type="checkbox"> <!-- Ô tick, có thể tick 1 lúc nhiều ô -->
+                <input type="checkbox">
+                <input type="radio" name="Test" id="1"> <!-- Giống Checkbox nhưng chỉ cho tick 1 ô -->
+                <input type="radio" name="Test" id="2">
+            </div>
+
+            <div class="class1__right"> <!-- padding là khoảng cách từ nội dung tới viền -->
+                <img src="anhb2.jpg" alt="Ảnh cây cầu" style="width: 100%;"/> <!-- alt: img nghĩa là khi ảnh bị lỗi thì web sẽ hiện chữ "Ảnh cái bàn" biết ảnh này là gì để fix lại -->
+                <!-- style width 100% trong img ở trên nghĩa là cho ảnh nằm trọn vẹn 100% trong thẻ div mà ko bị tràn hoặc hụt -->
+            </div>  
+        </section>
+
+        <section class="class1 class1--red"> <!-- Khác với section trên ở cách đặt tên BEM -->
+            <div class="class1__left">
+                <h2>Your Best Value Proposition</h2>
+                <h2 title="Đó, thấy hay ko ^^">Di chuột vào đây</h2>
+                <p>abcdefghijklmnopqrstuvwxyz</p>
+                <button>Start Free Trial</button>
+                <a href="https://www.figma.com/file/I6UZSzLtLuTs83uTuJlekI/Wireframing-(Copy)?node-id=0%3A10&t=pqQODSDiqRVjpYdc-0">Đi tới Figma</a> <!-- Bấm vào link để mở 1 trang khác -->
+                <ul>
+                    <li>Option 1</li>
+                    <li>Option 2</li>
+                    <li>Option 3</li>
+                </ul>
+                <input type="text">
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="radio" name="Test" id="1">
+                <input type="radio" name="Test" id="2">
+            </div>
+
+            <div class="class1__right">
+                <img src="anhb2.jpg" alt="Ảnh cây cầu" style="width: 100%;"/>
+            </div>  
+        </section>
+
+        <section class="class2">
+        <!-- <section class="class2" style="background-color: rgb(147, 255, 219);"> -->
+        <!-- Nếu đưa style trên qua CSS thì chỉ cần gõ thuộc tính bên trong style, ở đây là background -->
+
+            <div class="class2__top">
+                <h2>You Best Value Proposition</h2>
+                <p>abcdefghijklmnopqrstuvwxyz</p>
+                <button>Get Started</button>
+            </div>
+
+            <div class="class2__bottom">
+                <br>
+                <img src="anhb2.jpg" alt="Ảnh cây cầu"/>
+            </div>
+        </section>
+        
+        <section class="class3">
+            <div class="class3__center">
+                <h2>Value Proposition</h2>
+                <p>abcdefghijklmnopqrstuvwxyz</p>
+                <button>Start Free Trial</button>
+                <hr width="20%" size="10" color="gray"> <!-- Dấu gạch ngang. Hoặc chỉ cần hr -->
+                <br> <!-- Dấu enter -->
+            </div>
+        </section>
+
+        <!-- <section>
+            <div style="text-align: center;">You Best Value Proposition</div>
+        </section> -->
+    </body>
+
+</html>
